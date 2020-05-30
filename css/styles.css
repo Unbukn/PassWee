@@ -1,0 +1,47 @@
+body{
+    font-family: 'Source Code Pro', monospace, sans-serif, 'Times New Roman', Times, serif;
+    background-color: rgba(109, 211, 231);
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+}
+/*  jumbotron changes from BS4 */
+.jumbotron{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+}
+/* progress bar */
+#progressBarContainer{
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.progress-bar{
+    width: 0%;
+}
+
+/* bg jumbtrons without clouds */
+.banners{
+    background-color: rgba(109, 211, 231);
+    color: rgb(51, 197, 51);
+}
+/* bg jumbtrons with clouds */
+.cloudBanner{
+    height: 400px;
+    width: 100%;
+    color:  rgb(51, 197, 51);
+    text-shadow: rgba(168, 166, 159, 0.705);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../Assets/devices.gif");
+    background-color: rgba(109, 211, 231);
+}
+/* gen password btn */
+.genBtnCntr{
+    margin-bottom: 180px;
+}
+

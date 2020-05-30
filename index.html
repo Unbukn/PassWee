@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- link to navicon -->
+    <link rel="icon" type="image/png" href="./Assets/LogoMakr_4LPfQk.png">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- link gogle fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>PaSsWee - Password generator</title>
+  </head>
+
+  <body>
+    <div class="jumbotron text-center banners">
+      <div class="container">
+        <div class="lead">
+          <h1>PaSsWee</h1>
+          <p class="text-muted">The World's Most Secure Password Genorator</p>
+        </div>
+        </div>
+      </div>
+    <!-- navigatin bar here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-center">
+      <a class="navbar-brand" href="#formBody">Generate Your Password</a>
+    </nav>
+    
+<main>
+    <!-- animation jumbotron here -->
+    <div class="jumbotron cloudBanner w-100 p-3 ">
+    </div>
+    <div class="jumbotron banners w-100 p-3 ">
+      <div class="container align-bottom">
+        <div id="formBody" class="card col-sm-12 ">
+            <div class="card-body">
+              <h5 class="card-title">Password Configuration</h5>
+              <div id="errorsSpot"></div>
+              <hr>
+              <!-- pw length -->
+              <form></form>
+              <label class="my-1 mr-2">Length of the password?</label>
+              <input id="pwLength" value="8" name="length" class="lp-custom-range__number" step="1" type="number" min="8" max="128">
+              <br>
+              <br>
+              <!-- include lowercase c/b -->
+              <div class="form-check">
+                <input id="includeLowerC"  class="form-check-input" type="checkbox" value="" checked>
+                <label class="form-check-label" >Include lowercase letter</label>
+                <p class="text-muted">Rememeber: Strong passwords contain uppercase characters</p>
+              </div>
+              <br>
+              <!-- include uppercase checkbox -->
+              <div class="form-check">
+                <input id="includeUpperC" class="form-check-input" type="checkbox" value="8" checked>
+                <label class="form-check-label" >Include uppercase letter</label>
+                <p class="text-muted">Remember: Strong passwords contain lowercase characters</p>
+              </div>
+              <br>
+              <!-- include special char c/b -->
+              <div class="form-check">
+                <input id="includeSpecialC" class="form-check-input" type="checkbox" value="">
+                <label class="form-check-label">Include special characters</label>
+                <p class="text-muted">Remebemer: Strong passwords contain special characters</p>
+              </div>
+              <br>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- jumbotron with button -->
+    <div class="jumbotron text-center banners genBtnCntr">
+      <div class="container align-top">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 mainContent">
+            <div class="text-center">
+              <h2>Safe|Secure|Simple</h2>
+            </div>
+            <p class="align-bottom">No login reqired.</p>
+            <a id="generate" class="btn btn-outline-primary btn-lg align-bottom" href="#formBody">Generate Password</a>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+  </main>
+  <!-- footer -->
+
+    <div class="jumbotron fixed-bottom">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="progressBarContainer" class="progress">
+              <div id="progressBarProgress" class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <br>
+          <div class="row">
+          <div class="col-sm-12">
+            <p id="statusMessage">This site does not use cookies!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
